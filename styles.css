@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+/* Ensure no strikethrough text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: 'Georgia', serif;
     line-height: 1.6;
@@ -26,7 +40,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -111,10 +125,10 @@ nav {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}/
-* About Section */
-.about {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/ * About Section */ .about {
     padding: 80px 20px;
     background-color: white;
 }
@@ -147,7 +161,7 @@ nav {
     padding: 2rem;
     background-color: #faf8f5;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .feature h3 {
@@ -167,6 +181,7 @@ nav {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     color: #8b4513;
+    text-decoration: none;
 }
 
 .product-grid {
@@ -179,7 +194,7 @@ nav {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
@@ -197,6 +212,7 @@ nav {
     padding: 1rem;
     color: #8b4513;
     font-size: 1.3rem;
+    text-decoration: none;
 }
 
 .product-card p {
@@ -266,19 +282,19 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .hero-content h2 {
         font-size: 2rem;
     }
-    
+
     .nav-links {
         gap: 1rem;
     }
-    
+
     .product-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .contact-info {
         grid-template-columns: 1fr;
     }
